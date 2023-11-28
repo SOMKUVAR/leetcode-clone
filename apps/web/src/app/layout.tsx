@@ -7,11 +7,7 @@ import { useRouter } from "next/navigation";
 
 
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}): JSX.Element {
+export default function RootLayout({children,}: {children: React.ReactNode;}): JSX.Element {
 
   const router = useRouter();
 
