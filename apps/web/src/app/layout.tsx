@@ -2,8 +2,8 @@
 
 import "./globals.css";
 import "ui/styles.css";
-import { Navbar } from "ui";
 import { useRouter } from "next/navigation";
+import { Navbar } from "ui";
 
 
 

@@ -1,9 +1,25 @@
-import React from 'react'
+"use client"
 
-const Login = () => {
+import React from 'react'
+import { Login } from 'ui';
+import { useRouter } from 'next/navigation';
+
+const LoginPage = () => {
+  const router = useRouter();
+
+  const onLogin = (username : string, password : string) => {
+    console.log(username, password);
+  }
+
+  const onRegister = () => {
+    router.push('/signup');
+  }
+
   return (
-    <div>page</div>
+    <>
+    <Login onLogin = {onLogin} onRegister = {onRegister}/>
+    </>
   )
 }
 
-export default Login;
+export default LoginPage;
