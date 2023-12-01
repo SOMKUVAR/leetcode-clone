@@ -3,4 +3,5 @@ import "./styles.css";
 
 // components
 export * from './navbar';
-export * from './auth'
+export * from './commen';
+export * from './form';

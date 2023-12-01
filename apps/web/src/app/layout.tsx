@@ -21,8 +21,8 @@ export default function RootLayout({children,}: {children: React.ReactNode;}): J
   }]
 
   return (
-    <html lang="en">
-      <body >
+    <html >
+      <body className="bg-gray-200">
         <Navbar links = {LINKS}/>
         {children}
       </body>
